@@ -1,0 +1,15 @@
+=== Docker image generation
+
+Run the following command in order to create the docker image for this PI:
+
+[source, shell]
+----
+docker build . -t pi_cpp_docker_image
+----
+
+=== Launch the docker image
+
+[source, shell]
+----
+docker run --rm pi_cpp_docker_image ./run_pi
+----

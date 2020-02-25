@@ -1,0 +1,5 @@
+#! /bin/bash
+
+echo "Example of PI in cpp"
+
+hello_world

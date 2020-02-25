@@ -4,5 +4,6 @@ class Awesome
 {
   public:
     Awesome();
-    void print_message(std::string msg);
+    double computeDuration(std::string filename);
+    void storeResult(std::string filename, double value);
 };

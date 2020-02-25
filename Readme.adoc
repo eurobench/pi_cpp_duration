@@ -11,5 +11,5 @@ docker build . -t pi_cpp_docker_image
 
 [source, shell]
 ----
-docker run --rm pi_cpp_docker_image ./run_pi
+docker run --rm -v $PWD/test_data/input:/in -v $PWD/out_folder:/out pi_cpp_docker_image ./run_pi /in/data_in.csv /out
 ----

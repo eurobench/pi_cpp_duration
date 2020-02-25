@@ -2,4 +2,4 @@
 
 echo "Example of PI in cpp"
 
-hello_world "$@"
+pi_main "$@"

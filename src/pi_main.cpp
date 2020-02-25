@@ -1,6 +1,17 @@
-#include <awesome_lib/awesome_class.h>
+#include <pi_duration_lib/pi_duration.h>
 
 #include <filesystem>
+#include <iostream>
+#include <fstream>
+#include <iomanip> 
+
+void storeResult(std::string filename, double value)
+{
+  std::ofstream myfile;
+  myfile.open (filename);
+  myfile << std::fixed << std::setprecision(5) << "type: \'scalar\'\nvalue: [[" << value << "]]";
+  myfile.close();
+}
 
 int main (int argc, char *argv[])
 {
@@ -40,8 +51,8 @@ int main (int argc, char *argv[])
 
   std::string file_out = folder_out.string() + "/pi_duration.yaml";
 
-  Awesome awesome;
-  double duration = awesome.computeDuration(file_in.string());
-  awesome.storeResult(file_out, duration);
+  PIDuration pi;
+  double duration = pi.computeDuration(file_in.string());
+  storeResult(file_out, duration);
   return 0;
 }

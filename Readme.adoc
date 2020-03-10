@@ -24,18 +24,17 @@ docker run --rm -v $PWD/test_data/input:/in -v $PWD/out_folder:/out pi_cpp_docke
 ----
 
 == Acknowledgements
-
-image:http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png[link:"http://eurobench2020.eu"]
-
-Supported by Eurobench - the European robotic platform for bipedal locomotion benchmarking.
+[cols="^.^,.^", grid="none", frame="none"]
+|===
+| image:http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png[link="http://eurobench2020.eu"] |Supported by Eurobench - the European robotic platform for bipedal locomotion benchmarking.
 More information: link:http://eurobench2020.eu[Eurobench website]
 
-image:http://eurobench2020.eu/wp-content/uploads/2018/02/euflag.png[Euro flag]
 
-This project has received funding from the European Union’s Horizon 2020
+
+| image:http://eurobench2020.eu/wp-content/uploads/2018/02/euflag.png[Euro flag] | This project has received funding from the European Union’s Horizon 2020
 research and innovation programme under grant agreement no. 779963.
-
 The opinions and arguments expressed reflect only the author‘s view and
 reflect in no way the European Commission‘s opinions.
 The European Commission is not responsible for any use that may be made
 of the information it contains.
+|===

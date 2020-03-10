@@ -1,6 +1,6 @@
 = PI CPP
 
-[![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
 
 Copyright Tecnalia 2020
 
@@ -25,16 +25,12 @@ docker run --rm -v $PWD/test_data/input:/in -v $PWD/out_folder:/out pi_cpp_docke
 
 == Acknowledgements
 
-<a href="http://eurobench2020.eu">
-  <img src="http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png"
-       alt="rosin_logo" height="60" >
-</a>
+image:http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png[link:"http://eurobench2020.eu"]
 
 Supported by Eurobench - the European robotic platform for bipedal locomotion benchmarking.
-More information: [Eurobench website][eurobench_website]
+More information: link:http://eurobench2020.eu[Eurobench website]
 
-<img src="http://eurobench2020.eu/wp-content/uploads/2018/02/euflag.png"
-     alt="eu_flag" width="100" align="left" >
+image:http://eurobench2020.eu/wp-content/uploads/2018/02/euflag.png[Euro flag]
 
 This project has received funding from the European Union’s Horizon 2020
 research and innovation programme under grant agreement no. 779963.
@@ -43,6 +39,3 @@ The opinions and arguments expressed reflect only the author‘s view and
 reflect in no way the European Commission‘s opinions.
 The European Commission is not responsible for any use that may be made
 of the information it contains.
-
-[eurobench_logo]: http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png
-[eurobench_website]: http://eurobench2020.eu "Go to website"

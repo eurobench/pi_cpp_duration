@@ -1,4 +1,13 @@
-=== Docker image generation
+= PI CPP
+
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
+
+Copyright Tecnalia 2020
+
+This is an example of Performance Indicator implemented in C++.
+It is prepared to be used within the Eurobench Benchmarking Software.
+
+== Docker image generation
 
 Run the following command in order to create the docker image for this PI:
 
@@ -7,9 +16,25 @@ Run the following command in order to create the docker image for this PI:
 docker build . -t pi_cpp_docker_image
 ----
 
-=== Launch the docker image
+== Launch the docker image
 
 [source, shell]
 ----
 docker run --rm -v $PWD/test_data/input:/in -v $PWD/out_folder:/out pi_cpp_docker_image ./run_pi /in/data_in.csv /out
 ----
+
+== Acknowledgements
+[cols="^.^,.^", grid="none", frame="none"]
+|===
+| image:http://eurobench2020.eu/wp-content/uploads/2018/06/cropped-logoweb.png[link="http://eurobench2020.eu"] |Supported by Eurobench - the European robotic platform for bipedal locomotion benchmarking.
+More information: link:http://eurobench2020.eu[Eurobench website]
+
+
+
+| image:http://eurobench2020.eu/wp-content/uploads/2018/02/euflag.png[Euro flag] | This project has received funding from the European Union’s Horizon 2020
+research and innovation programme under grant agreement no. 779963.
+The opinions and arguments expressed reflect only the author‘s view and
+reflect in no way the European Commission‘s opinions.
+The European Commission is not responsible for any use that may be made
+of the information it contains.
+|===
